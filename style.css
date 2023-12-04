@@ -53,12 +53,8 @@ body {
   justify-content: center;
 }
 
-.perfum-img-desktop {
+.perfum-img {
   max-width: 100%;
-}
-
-.perfum-img-mobile {
-  display: none;
 }
 
 .card-text-box {
@@ -101,6 +97,12 @@ body {
   color: hsl(228, 12%, 48%);
 }
 
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
   border: none;
   background-color: hsl(158, 36%, 37%);
@@ -109,7 +111,7 @@ body {
   font-family: "Montserrat";
   font-weight: 700;
 
-  padding: 1.4rem;
+  padding: 1.2rem 4rem;
   border-radius: 1.2rem;
 
   cursor: pointer;
@@ -142,13 +144,6 @@ body {
     font-size: 60%;
   }
 
-  .perfum-img-desktop {
-    display: none;
-  }
-  .perfum-img-mobile {
-    display: block;
-    max-width: 100%;
-  }
   .card-component {
     max-width: 36rem;
     grid-template-columns: 1fr;
