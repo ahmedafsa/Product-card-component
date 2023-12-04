@@ -1,0 +1,174 @@
+/* GENERAL */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 500;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FONTS */
+
+.sub-heading,
+.prefum-details,
+.before-price,
+.btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hrading,
+.current-price {
+  font-family: "Fraunces", sans-serif;
+}
+
+/* THE CARD */
+
+.card-component {
+  max-width: 60rem;
+  border-radius: 1.2rem;
+  background-color: hsl(0, 0%, 100%);
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.perfum-img-desktop {
+  max-width: 100%;
+}
+
+.perfum-img-mobile {
+  display: none;
+}
+
+.card-text-box {
+  padding: 3.6rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.sub-heading {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+.prefum-details {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-price {
+  font-size: 3rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.before-price {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+/* MEDIA QUERIES */
+
+/* * Below 800px */
+
+@media (max-width: 50em) {
+  html {
+    font-size: 59%;
+  }
+}
+
+/* * Below 608px */
+@media (max-width: 38em) {
+  html {
+    font-size: 60%;
+  }
+
+  .perfum-img-desktop {
+    display: none;
+  }
+  .perfum-img-mobile {
+    display: block;
+    max-width: 100%;
+  }
+  .card-component {
+    max-width: 36rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card-text-box {
+    padding: 3.6rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* * Below 384px */
+
+@media (max-width: 24em) {
+  html {
+    font-size: 58%;
+  }
+  .card-text-box {
+    padding: 2.4rem 3rem 2.4rem 3rem;
+  }
+}
